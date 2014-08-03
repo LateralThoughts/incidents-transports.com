@@ -1,0 +1,93 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Incidents-Transports</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href="@routes.Assets.at("stylesheets/jumbotron-narrow.css")" rel="stylesheet">
+	<link href="@routes.Assets.at("stylesheets/main.min.css")" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+     <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Accueil</a></li>
+          <li><a href="#">Incidents</a></li>
+          <li><a href="#">Archives</a></li>
+          <li><a href="#">Ajouter un Incident</a></li>
+          <li><a href="#">Contribuer</a></li>
+          <li><a href="#">A propos</a></li>
+        </ul>
+        <h3 class="project text-muted"><span class="name">Incidents</span>Transports</h3>
+      </div>
+
+      <div class="jumbotron">
+      	<div class="row">
+	        <img class="col-lg-6" height="auto" class="main_screenshot" alt="2010-10-09 Arlbergtunnel" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/48/2010-10-09_Arlbergtunnel.jpg/800px-2010-10-09_Arlbergtunnel.jpg">
+	        <p class="col-lg-6">
+				Vous donner accès librement et gratuitement aux <span class="strong">informations concernant vos transports en communs</span>, voilà notre ambition. Ces informations sont contribuées par des usagers <span class="strong">comme vous</span>, via Twitter, leur portable, ou ce site, <span class="strong">en temps réel</span> ce qui nous permet d'être au plus proche de la réalité. Nous contribuons aussi à fluidifier le trafic, en propageant l'information sur les incidents plus rapidement, nous donnons la possibilité de choisir son itinéraire bis. Nous espérons que cette initiative vous sera utile et vous souhaitons un bon trajet.<br/>
+	        	<a class="btn btn-lg btn-success" href="#" role="button">Voir les incidents en cours</a>
+	    	</p>
+    	</div>
+        
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Derniers incidents</h4>
+          <p>
+          	<img src="@routes.Assets.at("images/icons/find.png")"/>
+          	Accèdez aux derniers incidents déclaré par les usagers.
+          </p>
+
+          <h4>Déclarer un incident</h4>
+          <p>
+          	<img src="@routes.Assets.at("images/icons/add.png")"/>
+          	Aider la communauté en déclarant vous même un incident non repertorié.</p>
+
+          <h4>Android</h4>
+          <p>
+          	<img width="80px" height="auto" src="https://developer.android.com/images/brand/Android_Robot_100.png"/>
+          	Accèdez aux derniers incidents depuis votre portable sous Android.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>IPhone</h4>
+          <p>
+          	<img width="auto" height="80px" src="@routes.Assets.at("images/app_store.png")"/>
+          	Accèdez aux derniers incidents depuis votre portable sur votre IPhone.</p>
+
+          <h4>Twitter</h4>
+          <p>
+          	<img src="@routes.Assets.at("images/icons/twitter_logo.png")"/>
+          	Déclarez ou soyez tenu informé des derniers incidents directement via Twitter.</p>
+
+          <h4>API</h4>
+          <p>
+          	<img width="80px" height="auto" src="@routes.Assets.at("images/bdd.jpg")"/>
+          	Utilisez vous-même nos données via notre API librement accessible.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; Lateral-Thoughts 2010-2014</p>
+      </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
+        @content
+    </body>
+</html>
